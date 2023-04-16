@@ -1,0 +1,151 @@
+@import "../../Variables.scss";
+
+.titleSearch-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.1);
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: $InterV_ExtraBold;
+  color: #1d1d1b;
+  width: 139px;
+  margin-right: 43px;
+  margin-top: 0;
+  margin-bottom: 0;
+  & span {
+    color: #bb1e1e;
+  }
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: min(100%, 725px);
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 28px;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: $white;
+  box-shadow: 0px 1px 2px -1px #c8cad1;
+  border-width: 0;
+  height: 50px;
+  padding-left: 15.5px;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  background: $white;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 34.5px;
+  background-image: url("../public/assets/icons/Search.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  color: #1d1d1b;
+  font-size: 15px;
+  font-weight: $InterV;
+}
+
+.search-input::placeholder {
+  font-size: 15px;
+  font-weight: $InterV;
+  color: rgba(29, 29, 27, 0.4);
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  border-width: 0;
+  background: #bb1e1e;
+  color: $white;
+  font-size: 15px;
+  font-weight: $InterV_Bold;
+  border-radius: 6px;
+  width: 95px;
+  height: 40px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  transition: color 0.8s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+  }
+}
+
+@media all and (max-width: 480px) {
+  .titleSearch-container {
+    flex-direction: column;
+    border-bottom: none;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .title {
+    position: absolute;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: $InterV_ExtraBold;
+    color: #1d1d1b;
+    width: 139px;
+    left: 16px;
+    top: 24px;
+    & span {
+      color: #bb1e1e;
+    }
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 73px;
+    margin-bottom: 28px;
+    &.menu {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center {
+    position: initial;
+    margin: 111px 0 64px 0;
+    width: 139px;
+    height: 39px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .menuIcons {
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    right: 16px;
+    top: 29px;
+  }
+}
