@@ -2,7 +2,7 @@
 
 To run this news site app, you need to follow the following steps:
 
-1. Clone the repository to your local machine by running git clone git@github.com:Marko1310/NewsPage.git in your terminal.
+1. Clone the repository to your local machine by running git clone git@github.com:Marko1310/MyNews.git in your terminal.
 2. Install the required dependencies by running npm install.
 3. Start the development server by running npm start.
 4. Open your browser and go to http://localhost:3000 to view the app.
